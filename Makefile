@@ -21,8 +21,8 @@ BINARY := $(BUILDDIR)/$(PRODUCT)
 # intel flags:
 CXX := icpc
 CXXFLAGS_DEBUG := -g
-CXXFLAGS_OPT := -O3 -fast -fno-alias
-CXXFLAGS_OPENMP := -openmp
+CXXFLAGS_OPT := -O3 -fno-alias -std=c++11
+CXXFLAGS_OPENMP := -qopenmp
 
 # pgi flags:
 #CXX := pgCC
